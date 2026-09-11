@@ -37,7 +37,7 @@
           <h1 id="hero-title">Critical <span aria-hidden="true">&#9889;</span> Split</h1>
           <p class="hero-line">Split the cards. Roll your fate. Claim the gems.</p>
           <p class="hero-intro">
-            Six characters. Six dice. A different combination every round—and just enough chaos to make every choice matter.
+            Six characters. Six dice. A different combination every round—and just enough chaos to make every roll matter.
           </p>
           <a class="button button-primary" href="#game">Discover the game</a>
         </div>
@@ -52,7 +52,7 @@
           <p class="eyebrow">Fast to learn. Different every round.</p>
           <h2 id="game-title">How the game begins</h2>
           <p>
-            Critical Split is a quick strategy game where the characters you receive shape the risks you take. Some hit hard. Some manipulate the dice. Some become stronger with the right partner.
+            Critical Split is a fast-paced dice game driven by chance, where the characters you receive shape every roll. Some hit hard. Some bend the odds. Some become stronger with the right partner.
           </p>
         </div>
 
@@ -60,7 +60,7 @@
           <article class="step reveal">
             <span class="step-number">01</span>
             <h3>Make the Divine Split</h3>
-            <p>Shuffle six character cards face down. Choose two characters and take their matching dice.</p>
+            <p>Shuffle all six character cards face down. The non-dealer(s) choose two characters and take their matching dice. The dealer chooses two from the remaining cards. Unchosen characters stay face down.</p>
           </article>
           <article class="step reveal">
             <span class="step-number">02</span>
@@ -70,7 +70,7 @@
           <article class="step reveal">
             <span class="step-number">03</span>
             <h3>Claim the gems</h3>
-            <p>Win the round and take a gem. The first player to collect three gems wins the game.</p>
+            <p>Win the round? Claim a gem. The first player to collect three gems wins the game.</p>
           </article>
         </div>
 
@@ -81,10 +81,10 @@
       </section>
 
       <section class="visual-break" aria-label="Critical Split game artwork">
-        <img src="assets/game-night.webp" alt="Critical Split character cards, colorful dice, and gems arranged during a woodland game night" loading="lazy" />
+        <img src="assets/lore-boy-raccoon-play.webp" alt="A boy and woodland animals playing Critical Split by lantern light" loading="lazy" />
         <div class="visual-break-copy reveal">
           <p class="eyebrow">Every pairing changes the odds</p>
-          <h2>Choose what fate gives you.</h2>
+          <h2>Accept what fate gives you.</h2>
         </div>
       </section>
 
@@ -95,26 +95,38 @@
           <p>Each character is tied to a different die and brings a distinct ability to the table.</p>
         </div>
 
-        <div class="character-grid">
+        <div class="carousel-heading reveal">
+          <p>Swipe or scroll to meet every challenger.</p>
+          <div class="carousel-controls" aria-label="Character carousel controls">
+            <button type="button" data-character-prev aria-label="Previous character">&#8592;</button>
+            <button type="button" data-character-next aria-label="Next character">&#8594;</button>
+          </div>
+        </div>
+
+        <div class="character-grid" data-character-carousel tabindex="0" aria-label="Critical Split characters, ordered by die size">
           <article class="character-card character-hype reveal">
-            <img src="assets/hype.webp" alt="Hype Slinktoe, a black cat rogue wearing a purple hood" loading="lazy" />
-            <div><p>The Cat Rogue</p><h3>Hype Slinktoe</h3><span>Unpredictable by design.</span></div>
+            <img src="assets/character-hype.webp" alt="Hype Slinktoe tipping water from a glass" loading="lazy" />
+            <div><p>d4 · The Scrappy Rogue</p><h3>Hype Slinktoe</h3><span>Unpredictable by design.</span></div>
           </article>
           <article class="character-card character-dootch reveal">
-            <img src="assets/dootch.webp" alt="Dootch Moonbone, a wild-haired gnome wizard conjuring blue energy" loading="lazy" />
-            <div><p>The Gnome Wizard</p><h3>Dootch Moonbone</h3><span>Small die. Dangerous magic.</span></div>
-          </article>
-          <article class="character-card character-gurf reveal">
-            <img src="assets/gurf.webp" alt="Gurf Beefcoat, a half-orc reading an advanced mathematics book" loading="lazy" />
-            <div><p>The Half-Orc Barbarian</p><h3>Gurf Beefcoat</h3><span>Brains, brawn, and good math.</span></div>
-          </article>
-          <article class="character-card character-krell reveal">
-            <img src="assets/krell.webp" alt="Krell, an armored warrior tossing a coin" loading="lazy" />
-            <div><p>The Warrior</p><h3>Krell</h3><span>Fortune favors the fearless.</span></div>
+            <img src="assets/character-dootch.webp" alt="Dootch Moonbone roasting a marshmallow with blue magic" loading="lazy" />
+            <div><p>d6 · The Wild Sorcerer</p><h3>Dootch Moonbone</h3><span>Definitely not licensed.</span></div>
           </article>
           <article class="character-card character-orla reveal">
-            <img src="assets/orla.webp" alt="Orla, an elven druid holding a crystal staff with a raccoon companion" loading="lazy" />
-            <div><p>The Druid</p><h3>Orla</h3><span>Stronger with the right partner.</span></div>
+            <img src="assets/character-orla.webp" alt="Orla Stormbloom feeding sprinkles to a carnivorous plant" loading="lazy" />
+            <div><p>d8 · The Mischievous Druid</p><h3>Orla Stormbloom</h3><span>A good-natured woodland instigator.</span></div>
+          </article>
+          <article class="character-card character-bean reveal">
+            <img src="assets/character-bean.webp" alt="Bean Smeltfire working on a strange invention" loading="lazy" />
+            <div><p>d10 · The Crafty Artificer</p><h3>Bean Smeltfire</h3><span>Voiding the warranty to win the battle.</span></div>
+          </article>
+          <article class="character-card character-gurf reveal">
+            <img src="assets/character-gurf.webp" alt="Gurf Beefcoat holding a jar while two raccoons climb on him" loading="lazy" />
+            <div><p>d12 · The Beefy Barbarian</p><h3>Gurf Beefcoat</h3><span>The problem that problems have.</span></div>
+          </article>
+          <article class="character-card character-krell reveal">
+            <img src="assets/character-krell.webp" alt="Krell Twicefallen flipping a coin" loading="lazy" />
+            <div><p>d20 · The Cursed Warrior</p><h3>Krell Twicefallen</h3><span>Fortune favors the fearless.</span></div>
           </article>
         </div>
       </section>
@@ -126,20 +138,53 @@
           <p>Character moments, strange encounters, playtest nights, and more from the world of Critical Split.</p>
         </div>
 
-        <div class="gallery-grid">
+        <div class="gallery-grid lore-grid">
           <figure class="gallery-large reveal">
-            <img src="assets/woodland-play.webp" alt="Woodland animals surprised by a game of Critical Split under moonlight" loading="lazy" />
+            <img src="assets/lore-raccoon-fight.webp" alt="Woodland animals gathered around a chaotic game of Critical Split" loading="lazy" />
             <figcaption>Things get wild after the split.</figcaption>
           </figure>
           <figure class="reveal">
-            <img src="assets/orla-lore.webp" alt="Orla showing RAIN BOWS tattooed across her knuckles" loading="lazy" />
+            <img src="assets/lore-boy-raccoon-play.webp" alt="A boy and woodland animals playing Critical Split by lantern light" loading="lazy" />
+            <figcaption>A different combination every round.</figcaption>
+          </figure>
+          <figure class="reveal">
+            <img src="assets/lore-dootch-stuffy.webp" alt="Dootch Moonbone holding a small Hype Slinktoe stuffed toy" loading="lazy" />
+            <figcaption>Dootch finds a familiar face.</figcaption>
+          </figure>
+          <figure class="reveal">
+            <img src="assets/lore-bean-lab.webp" alt="Bean Smeltfire testing glowing gems in a crowded workshop" loading="lazy" />
+            <figcaption>Bean voids another warranty.</figcaption>
+          </figure>
+          <figure class="reveal">
+            <img src="assets/lore-hype-box.webp" alt="Hype Slinktoe peeking out of a cardboard box" loading="lazy" />
+            <figcaption>Unpredictable. Even in a box.</figcaption>
+          </figure>
+          <figure class="reveal">
+            <img src="assets/lore-orla-knuckles.webp" alt="Orla Stormbloom showing RAIN BOWS tattooed across her knuckles" loading="lazy" />
             <figcaption>Orla makes her point.</figcaption>
+          </figure>
+          <figure class="reveal">
+            <img src="assets/lore-gurf-reading.webp" alt="Gurf Beefcoat reading an advanced mathematics book by the fire" loading="lazy" />
+            <figcaption>Brains, brawn, and bedtime reading.</figcaption>
           </figure>
           <div class="coming-soon reveal">
             <span aria-hidden="true">&#10022;</span>
             <p class="eyebrow">More from Critical Split</p>
             <h3>Videos and playtest clips are coming soon.</h3>
           </div>
+        </div>
+
+        <div class="card-art-heading reveal">
+          <p class="eyebrow">The full cast</p>
+          <h3>Critical Split card art</h3>
+        </div>
+        <div class="card-art-grid" aria-label="Critical Split card artwork">
+          <figure class="reveal"><img src="assets/card-d4-hype.webp" alt="Full artwork of Hype Slinktoe, the d4 character" loading="lazy" /><figcaption>d4 · Hype Slinktoe</figcaption></figure>
+          <figure class="reveal"><img src="assets/card-d6-dootch.webp" alt="Full artwork of Dootch Moonbone, the d6 character" loading="lazy" /><figcaption>d6 · Dootch Moonbone</figcaption></figure>
+          <figure class="reveal"><img src="assets/card-d8-orla.webp" alt="Full artwork of Orla Stormbloom, the d8 character" loading="lazy" /><figcaption>d8 · Orla Stormbloom</figcaption></figure>
+          <figure class="reveal"><img src="assets/card-d10-bean.webp" alt="Full artwork of Bean Smeltfire, the d10 character" loading="lazy" /><figcaption>d10 · Bean Smeltfire</figcaption></figure>
+          <figure class="reveal"><img src="assets/card-d12-gurf.webp" alt="Full artwork of Gurf Beefcoat, the d12 character" loading="lazy" /><figcaption>d12 · Gurf Beefcoat</figcaption></figure>
+          <figure class="reveal"><img src="assets/card-d20-krell.webp" alt="Full artwork of Krell Twicefallen, the d20 character" loading="lazy" /><figcaption>d20 · Krell Twicefallen</figcaption></figure>
         </div>
       </section>
 

@@ -19,6 +19,17 @@ nav?.querySelectorAll('a').forEach((link) => {
   });
 });
 
+const characterCarousel = document.querySelector('[data-character-carousel]');
+const scrollCharacters = (direction) => {
+  if (!characterCarousel) return;
+  const card = characterCarousel.querySelector('.character-card');
+  const distance = card ? card.getBoundingClientRect().width + 16 : characterCarousel.clientWidth * 0.8;
+  characterCarousel.scrollBy({ left: direction * distance, behavior: 'smooth' });
+};
+
+document.querySelector('[data-character-prev]')?.addEventListener('click', () => scrollCharacters(-1));
+document.querySelector('[data-character-next]')?.addEventListener('click', () => scrollCharacters(1));
+
 document.querySelectorAll('[data-year]').forEach((year) => {
   year.textContent = String(new Date().getFullYear());
 });
