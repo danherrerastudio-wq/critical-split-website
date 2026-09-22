@@ -6,10 +6,39 @@
     <meta name="theme-color" content="#090807" />
     <meta
       name="description"
-      content="Critical Split is a fast-paced tabletop dice duel for two or three players. Split the cards, roll your fate, and claim the gems."
+      content="Critical Split is a fast-paced fantasy dice game for kids, families, and 2–3 players. Split the character cards, roll your dice, and claim the gems."
     />
-    <title>Critical Split | Split the Cards. Roll Your Fate.</title>
+    <meta name="robots" content="index, follow, max-image-preview:large" />
+    <link rel="canonical" href="https://criticalsplit.com/" />
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="Critical Split" />
+    <meta property="og:title" content="Critical Split | Fantasy Dice Game for Kids &amp; Families" />
+    <meta property="og:description" content="A fast-paced fantasy tabletop dice game for kids, families, and 2–3 players. Split the cards, roll your fate, and claim the gems." />
+    <meta property="og:url" content="https://criticalsplit.com/" />
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="Critical Split | Fantasy Dice Game for Kids &amp; Families" />
+    <meta name="twitter:description" content="A fast-paced fantasy tabletop dice game for kids, families, and 2–3 players." />
+    <title>Critical Split | Fantasy Dice Game for Kids &amp; Families</title>
     <link rel="stylesheet" href="assets/styles.css" />
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Game",
+        "name": "Critical Split",
+        "url": "https://criticalsplit.com/",
+        "description": "A fast-paced fantasy tabletop dice game for kids, families, and two or three players. Six characters and six dice create a different combination every round.",
+        "genre": ["Fantasy", "Dice game", "Tabletop game", "Family game"],
+        "numberOfPlayers": {
+          "@type": "QuantitativeValue",
+          "minValue": 2,
+          "maxValue": 3
+        },
+        "publisher": {
+          "@type": "Organization",
+          "name": "Herrera Entertainment Company"
+        }
+      }
+    </script>
   </head>
   <body>
     <a class="skip-link" href="#main">Skip to content</a>
@@ -33,7 +62,7 @@
       <section class="hero" id="top" aria-labelledby="hero-title">
         <div class="hero-backdrop" aria-hidden="true"></div>
         <div class="hero-content">
-          <p class="eyebrow">A tabletop dice duel for 2–3 players</p>
+          <p class="eyebrow">A fantasy dice game for kids, families &amp; 2–3 players</p>
           <h1 id="hero-title">Critical <span aria-hidden="true">&#9889;</span> Split</h1>
           <p class="hero-line">Split the cards. Roll your fate. Claim the gems.</p>
           <p class="hero-intro">
@@ -137,6 +166,53 @@
           <h2 id="gallery-title">Stories from beyond the table</h2>
           <p>Character moments, strange encounters, playtest nights, and more from the world of Critical Split.</p>
         </div>
+
+        <section class="jingle-player reveal" aria-labelledby="jingle-title">
+          <div class="jingle-intro">
+            <span class="jingle-note" aria-hidden="true">&#9835;</span>
+            <div>
+              <p class="eyebrow">The official game jingle</p>
+              <h3 id="jingle-title">Turn up the Critical Split!</h3>
+              <p>Roll the dice, call your friends, and get ready to collect those gems.</p>
+            </div>
+          </div>
+
+          <div class="jingle-controls">
+            <button class="jingle-play" type="button" data-jingle-toggle>
+              <span class="jingle-play-icon" data-jingle-icon aria-hidden="true">&#9654;</span>
+              <span data-jingle-label>Play the jingle</span>
+            </button>
+            <div class="jingle-timeline">
+              <input type="range" min="0" max="100" value="0" step="0.1" aria-label="Jingle playback position" data-jingle-progress />
+              <div class="jingle-time" aria-live="off">
+                <span data-jingle-current>0:00</span>
+                <span data-jingle-duration>1:33</span>
+              </div>
+            </div>
+            <label class="jingle-volume">
+              <span class="sr-only">Jingle volume</span>
+              <span aria-hidden="true">&#9835;</span>
+              <input type="range" min="0" max="1" value="1" step="0.05" aria-label="Jingle volume" data-jingle-volume />
+            </label>
+          </div>
+
+          <details class="jingle-lyrics">
+            <summary>Read the lyrics</summary>
+            <div>
+              <p><strong>CRITICAL SPLIT!</strong><br />Now you’re rollin’ the dice,<br />And I bet’cha never gonna get<br />The same roll twice!<br /><strong>YEAH!</strong></p>
+              <p><strong>CRITICAL SPLIT!</strong><br />Now you’re callin’ your friends,<br />Cause your all gonna win<br />And collect those gems!<br /><strong>YEAH!</strong></p>
+              <p>I wanna win!<br /><strong>YEAH!</strong><br />Gimme the gems!<br /><strong>YEAH!</strong><br />I’m gonna win!<br /><strong>YEAH!</strong><br />Gimme the gems!<br /><strong>YEAH!</strong></p>
+              <p class="jingle-fade"><em>(Begins fading out)</em></p>
+              <p>I wanna win!<br /><strong>YEAH!</strong><br />Gimme the gems!<br /><strong>YEAH!</strong><br />I’m gonna win!<br /><strong>YEAH!</strong><br />Gimme the gems!<br /><strong>YEAH!</strong></p>
+              <p>I wanna win!<br /><strong>YEAH!</strong><br />Gimme the gems!<br /><strong>YEAH!</strong><br />I’m gonna win!<br /><strong>YEAH!</strong><br />Gimme the gems!<br /><strong>YEAH!</strong></p>
+            </div>
+          </details>
+
+          <audio preload="metadata" data-jingle-audio>
+            <source src="assets/critical-split-jingle.mp3" type="audio/mpeg" />
+            Your browser does not support HTML audio.
+          </audio>
+        </section>
 
         <div class="gallery-grid lore-grid">
           <figure class="gallery-large reveal">
